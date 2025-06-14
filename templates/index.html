@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Password Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      form {
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="number"] {
+        padding: 8px;
+        width: 60px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+        text-align: center;
+      }
+
+      button {
+        padding: 8px 15px;
+        background: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #45a049;
+      }
+
+      code {
+        background-color: #eaeaea;
+        padding: 2px 6px;
+        border-radius: 5px;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      p[style*="color: red"] {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Password Generator by ridzt</h1>
+    <form method="POST">
+      <label for="length">Password Length:</label>
+      <input type="number" id="length" name="length" value="12" min="4" required />
+      <button type="submit">Generate</button>
+    </form>
+
+    {% if result %} {% if result.error %}
+    <p style="color: red">{{ result.error }}</p>
+    {% else %}
+    <p>
+      <strong>Password:</strong> <code>{{ result.password }}</code><br />
+      <strong>Strength:</strong> {{ result.strength }}
+    </p>
+    {% endif %} {% endif %}
+  </body>
+</html>
