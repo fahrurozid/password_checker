@@ -12,7 +12,7 @@ A simple password generator and strength checker built using Python Flask.
 ## 📸 Overview
 
 <!-- ![Screenshot](templates/result.png) -->
-<img src="templates/result.png" alt="result" width="300"/>
+<img src="templates/result.png" alt="result" width="500"/>
 
 ## 🧰 Tech Stack
 
