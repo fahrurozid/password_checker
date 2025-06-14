@@ -10,7 +10,7 @@ __pycache__/
 .env
 
 # Riwayat password (jangan disebar)
-history.json
+# history.json
 
 # IDE/editor files
 .vscode/
