@@ -9,9 +9,9 @@ A simple password generator and strength checker built using Python Flask.
 - View password history with timestamps (saved locally).
 - Clean web dashboard using HTML + CSS.
 
-## 📸 Screenshot
+## 📸 Overview
 
-![Screenshot](D:\files\TKJ2022\Porto\Password_checker\templates\result.png) <!-- Tambahkan jika ada -->
+![Screenshot](templates/result.png)
 
 ## 🧰 Tech Stack
 
