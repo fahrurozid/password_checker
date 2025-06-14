@@ -11,7 +11,8 @@ A simple password generator and strength checker built using Python Flask.
 
 ## 📸 Overview
 
-![Screenshot](templates/result.png)
+<!-- ![Screenshot](templates/result.png) -->
+<img src="templates/result.png" alt="result" width="600"/>
 
 ## 🧰 Tech Stack
 
